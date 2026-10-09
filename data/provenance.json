@@ -1,0 +1,70 @@
+{
+  "dataset": "jniimi/tripadvisor-review-rating",
+  "dataset_url": "https://huggingface.co/datasets/jniimi/tripadvisor-review-rating",
+  "download_url": "https://huggingface.co/api/datasets/jniimi/tripadvisor-review-rating/parquet/default/train/0.parquet",
+  "original_paper": "https://aclanthology.org/D13-1199/",
+  "redistribution_license": "Apache-2.0 as stated by the publisher; consult original source terms",
+  "source_rows": 201295,
+  "rows_after_cleaning_before_deduplication": 201295,
+  "sample_rows": 20000,
+  "sample_seed": 42,
+  "source_parquet_sha256": "288d4befe7257460de95d63f0e1553f33b17d075c733739e5577358782f60571",
+  "sample_csv_sha256": "f022d35c00272d62a063091b6e021362e55ed1c05b1f1ad9bbd111751939555a",
+  "label_counts": {
+    "overall": 20000,
+    "service": 0,
+    "rooms": 20000,
+    "location": 20000,
+    "value": 20000,
+    "cleanliness": 20000,
+    "sleep_quality": 20000,
+    "business_service": 0
+  },
+  "rating_counts": {
+    "overall": {
+      "1": 814,
+      "2": 1074,
+      "3": 2772,
+      "4": 6754,
+      "5": 8586
+    },
+    "service": {},
+    "rooms": {
+      "1": 727,
+      "2": 1028,
+      "3": 3551,
+      "4": 6210,
+      "5": 8484
+    },
+    "location": {
+      "1": 258,
+      "2": 397,
+      "3": 1912,
+      "4": 4849,
+      "5": 12584
+    },
+    "value": {
+      "1": 851,
+      "2": 1081,
+      "3": 3661,
+      "4": 6328,
+      "5": 8079
+    },
+    "cleanliness": {
+      "1": 622,
+      "2": 666,
+      "3": 2111,
+      "4": 5444,
+      "5": 11157
+    },
+    "sleep_quality": {
+      "1": 820,
+      "2": 855,
+      "3": 2700,
+      "4": 5710,
+      "5": 9915
+    },
+    "business_service": {}
+  },
+  "limitation": "Different dataset from Yu (2016). No service or business_service ratings in this redistribution. No verified hotel grouping. Review ratings are weak labels for text sentiment."
+}

@@ -1,0 +1,125 @@
+{
+  "text": "Our room was spotless and spacious. We did not sleep well in the uncomfortable bed. The location was perfect for walking around town, and the hotel was excellent value for money.",
+  "comparison": [
+    {
+      "aspect": "rooms",
+      "before_sentiment": "Positive",
+      "before_rating": 4,
+      "after_sentiment": "Positive",
+      "after_rating": 5
+    },
+    {
+      "aspect": "location",
+      "before_sentiment": "Positive",
+      "before_rating": 5,
+      "after_sentiment": "Positive",
+      "after_rating": 5
+    },
+    {
+      "aspect": "value",
+      "before_sentiment": "Positive",
+      "before_rating": 4,
+      "after_sentiment": "Positive",
+      "after_rating": 5
+    },
+    {
+      "aspect": "cleanliness",
+      "before_sentiment": "Positive",
+      "before_rating": 4,
+      "after_sentiment": "Positive",
+      "after_rating": 5
+    },
+    {
+      "aspect": "sleep_quality",
+      "before_sentiment": "Positive",
+      "before_rating": 5,
+      "after_sentiment": "Negative",
+      "after_rating": 1
+    }
+  ],
+  "result": {
+    "overall": {
+      "sentiment": "Positive",
+      "rating": 4
+    },
+    "aspects": [
+      {
+        "aspect": "service",
+        "name": "Service",
+        "evidence": [],
+        "prediction_source": null,
+        "status": "unavailable",
+        "sentiment": null,
+        "rating": null
+      },
+      {
+        "aspect": "rooms",
+        "name": "Rooms",
+        "evidence": [
+          "Our room was spotless and spacious"
+        ],
+        "prediction_source": "aspect_excerpts",
+        "status": "predicted",
+        "sentiment": "Positive",
+        "rating": 5
+      },
+      {
+        "aspect": "location",
+        "name": "Location",
+        "evidence": [
+          "The location was perfect for walking around town, and the hotel was excellent value for money"
+        ],
+        "prediction_source": "aspect_excerpts",
+        "status": "predicted",
+        "sentiment": "Positive",
+        "rating": 5
+      },
+      {
+        "aspect": "value",
+        "name": "Value",
+        "evidence": [
+          "The location was perfect for walking around town, and the hotel was excellent value for money"
+        ],
+        "prediction_source": "aspect_excerpts",
+        "status": "predicted",
+        "sentiment": "Positive",
+        "rating": 5
+      },
+      {
+        "aspect": "cleanliness",
+        "name": "Cleanliness",
+        "evidence": [
+          "Our room was spotless and spacious"
+        ],
+        "prediction_source": "aspect_excerpts",
+        "status": "predicted",
+        "sentiment": "Positive",
+        "rating": 5
+      },
+      {
+        "aspect": "sleep_quality",
+        "name": "Sleep Quality",
+        "evidence": [
+          "We did not sleep well in the uncomfortable bed"
+        ],
+        "prediction_source": "aspect_excerpts",
+        "status": "predicted",
+        "sentiment": "Negative",
+        "rating": 1
+      },
+      {
+        "aspect": "business_service",
+        "name": "Business Service",
+        "evidence": [],
+        "prediction_source": null,
+        "status": "unavailable",
+        "sentiment": null,
+        "rating": null
+      }
+    ],
+    "inference_version": 2,
+    "method": "Aspect classifiers use all matching keyword excerpts. Overall and optional unmentioned-aspect estimates use full review text. Reported test metrics evaluate the original full-review baseline, not excerpt inference."
+  },
+  "scope": "Illustrative regression example; not an accuracy evaluation. Full-review baseline metrics are unchanged.",
+  "checks": "15 unittest checks passed, including the exact review through the HTTP API."
+}

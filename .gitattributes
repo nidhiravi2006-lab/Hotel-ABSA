@@ -1,0 +1,13 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf whitespace=-blank-at-eol
+*.html text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+*.txt text eol=lf
+*.pdf binary
+*.pptx binary
+*.png binary
+*.joblib binary
+*.parquet binary
+*.zip binary
